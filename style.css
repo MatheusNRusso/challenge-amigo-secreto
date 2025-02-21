@@ -1,0 +1,188 @@
+/* Variáveis de cores */
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima */
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+.header-banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+    text-align: center;
+}
+
+/* Seção de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    gap: 10px; /* Espaçamento entre o input e o botão */
+}
+
+.input-name {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.input-name:focus {
+    border-color: var(--color-button);
+}
+
+.button-add {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botões de ação */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os botões */
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.button-draw,
+.button-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+.button-reset {
+    background-color: #ffcccb;
+    color: #d32f2f;
+}
+
+.button-reset:hover {
+    background-color: #ffb3b3;
+}
+
+.button-draw img,
+.button-reset img {
+    width: 24px;
+    height: 24px;
+}
