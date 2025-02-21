@@ -121,7 +121,7 @@ Embora o projeto esteja funcional, há espaço para melhorias:
 
 ### **1. Clone o Repositório**
 ```bash
-git clone https://github.com/seu-usuario/amigo-secreto.git
+git clone https://github.com/MatheusNRusso/challenge-amigo-secreto.git
 ```
 
 ### **2. Execute Localmente**
